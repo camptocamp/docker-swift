@@ -4,9 +4,6 @@ ENV OS_AUTH_URL ""
 ENV OS_TENANT_NAME ""
 ENV OS_USERNAME ""
 ENV OS_PASSWORD ""
-ENV STORAGE_URL ""
-ENV CONTAINER ""
-ENV OBJECT ""
 
 ENV PIPE_NAME "/tmp/share/pipe"
 
@@ -18,4 +15,3 @@ VOLUME [ "/tmp/share" ]
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
-CMD [ "tee" ]
